@@ -1,50 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Manpreet Kaur | Senior Data & BI Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Senior Data & BI Analyst based in Melbourne, Australia. Tableau, Power BI, SQL, Python.">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manpreet Kaur | Data & BI Analyst</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container header-flex">
-    <div class="brand">
-      <h2>Manpreet Kaur</h2>
-      <p>Senior Data & BI Analyst</p>
+<!-- ================= HEADER ================= -->
+<header class="top-nav">
+  <div class="nav-left">
+    <img src="assets/logo.png" class="nav-logo-img" alt="Logo" />
+  </div>
+
+  <div class="nav-center">
+    <div class="brand-title">Manpreet Kaur</div>
+    <div class="brand-subtitle">Senior Data & BI Analyst</div>
+
+    <div class="nav-links">
+      <a onclick="showSection('home')">Home</a>
+      <span class="sep">|</span>
+      <a onclick="showSection('projects')">Projects</a>
+      <span class="sep">|</span>
+      <a onclick="showSection('skills')">Skills</a>
+      <span class="sep">|</span>
+      <a onclick="showSection('experience')">Experience</a>
+      <span class="sep">|</span>
+      <a onclick="showSection('contact')">Contact</a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="tableau.html">Tableau</a>
-      <a href="case-studies.html">Case Studies</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
   </div>
 </header>
 
-<main class="container">
+<main class="main-container">
+
+<!-- ================= HOME ================= -->
+<section id="home" class="section active">
+  <div class="center-title main-title">
+    Turning Data into Business Decisions
+  </div>
+
+  <p class="subtitle center-title">
+    Senior Data & BI Analyst with expertise in Tableau, Power BI, SQL, and Python.
+    Delivering insights for enterprise and government clients across Australia.
+  </p>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-number">10+</div><div class="stat-label">Years Experience</div></div>
+    <div class="stat-card"><div class="stat-number">40+</div><div class="stat-label">Dashboards</div></div>
+    <div class="stat-card"><div class="stat-number">15+</div><div class="stat-label">Clients</div></div>
+    <div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Industries</div></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <h2 class="center-title">Featured Projects</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Banking Risk Dashboard</h3>
+      <p>SQL + Tableau dashboard for fraud & credit risk insights.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pharma Sales Analytics</h3>
+      <p>Power BI analytics for regional sales optimization.</p>
+    </div>
+
+    <div class="card">
+      <h3>Automotive Market Analysis</h3>
+      <p>Python + SQL demand forecasting & segmentation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <h2 class="center-title">Core Skills</h2>
+
+  <div class="card-grid">
+    <div class="card">Tableau • Power BI</div>
+    <div class="card">SQL (Advanced)</div>
+    <div class="card">Python (Pandas, NumPy)</div>
+    <div class="card">Business Analysis</div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <h2 class="center-title">Professional Experience</h2>
+
   <div class="card">
-    <h1>Senior Data & Business Intelligence Analyst</h1>
-    <p>
-      Experienced Data & BI Analyst specialising in Tableau, Power BI, SQL, and Python.
-      Based in <strong>Melbourne, Australia</strong>.
-    </p>
+    <h3>Senior Data Analyst</h3>
+    <p>Enterprise & Government Clients (Australia)</p>
     <ul>
-      <li>Interactive dashboards & KPI reporting</li>
-      <li>Business-focused SQL analytics</li>
-      <li>Python for data cleaning & preparation</li>
-      <li>Stakeholder-driven insights</li>
+      <li>Built executive dashboards</li>
+      <li>Improved reporting efficiency by 40%</li>
+      <li>Led BI modernization initiatives</li>
     </ul>
   </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <h2 class="center-title">Contact</h2>
+
+  <div class="card">
+    <p>📍 Australia</p>
+    <p>📧 manpreet@example.com</p>
+    <p>🔗 LinkedIn | GitHub</p>
+  </div>
+</section>
+
 </main>
 
-<footer class="site-footer">
-  <p>© 2026 Manpreet Kaur · Melbourne, Australia</p>
+<footer class="footer">
+  © 2026 Manpreet Kaur · Data Analytics Portfolio
 </footer>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
 
 </body>
 </html>
